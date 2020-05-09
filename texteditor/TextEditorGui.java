@@ -433,7 +433,7 @@ public class TextEditorGui extends javax.swing.JFrame {
                 try{
                     FileWriter filewriter = new FileWriter(filename);
                     String text = textArea.getText();
-                    text = text.replace("\n", System.lineSeparator());// "\\n" will make \n as a word instead of a newline character
+                    text = text.replace("\n", System.lineSeparator());//If you use "\\n" it will make \n as a word instead of a newline character
                     /**
                      *  String str = "sdasdasa&amp;adas&dasdasa";  
                         str = str.replaceAll("&(?!amp;)", "&amp;");//If you want to use regex possible way is replaceAll. Find regex list from javadoc
